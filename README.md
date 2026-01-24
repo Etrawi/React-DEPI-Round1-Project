@@ -64,7 +64,9 @@ Reuse of existing CSS files
 Easy setup with Vite
 No major refactoring will be required during migration.
 
-medibook-ui/
+
+
+medibook/
 │
 ├── index.html
 │
@@ -95,7 +97,3 @@ medibook-ui/
 │
 ├── README.md
 └── .gitignore
-
-
-
-
