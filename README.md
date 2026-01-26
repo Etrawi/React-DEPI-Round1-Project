@@ -8,10 +8,10 @@
 
 ## 🛠️ Tech Stack (Current Phase)
 
-- **Structure:** HTML5 (Semantic Elements)
-- **Styling:** CSS3, Bootstrap 5 (Bootswatch Pulse Theme)
-- **Icons:** FontAwesome 6
-- **Version Control:** Git & GitHub
+* **Structure:** HTML5 (Semantic Elements)
+* **Styling:** CSS3, Bootstrap 5 (Bootswatch Pulse Theme)
+* **Icons:** FontAwesome 6
+* **Version Control:** Git & GitHub
 
 ---
 
@@ -24,83 +24,85 @@ MEDIBOOK/
 ├── static-design/
 │   ├── index.html           # Landing Page (Entry Point)
 │   ├── auth/                # Shared Components (Navbar, Footer)
-│   ├── assets/              # Static Assets
-│   │   ├── css/             # Custom Styles (layout, responsive, main)
-│   │   ├── js/              # Script files
-│   │   └── images/          # Organized images (doctors, patients, logos)
+│   ├── assets/              # Static Assets (CSS, JS, Images)
 │   ├── patient/             # Patient Portal (Booking, Search, Profile)
 │   ├── doctor/              # Doctor Dashboard & Management
 │   └── admin/               # Admin Control Panel
 
-
 🚀 How to Run
-
 Since this is the Static Design Phase, no server or database installation is required.
 
-Clone the repository:
+1. Clone the repository:
 
 Bash
 git clone [https://github.com/Etrawi/depi-medibook.git](https://github.com/Etrawi/depi-medibook.git)
-Navigate to the project folder:
+
+2. Navigate to the project folder:
 
 Bash
 cd depi-medibook/static-design
-Run the project:
 
-Simply double-click on index.html to open it in your browser.
+3. Run the project:
 
-Or use the VS Code "Live Server" extension for a better experience.
+- Simply double-click on index.html to open it in your browser.
+
+- Or use the VS Code "Live Server" extension for a better experience.
 
 🤝 Team Workflow (Contribution Guidelines)
 To maintain a clean repository, please follow these rules strictly:
 
-1. Branching Strategy
-main: Production-ready code only (Clean Delivery). Do NOT push here directly.
+1. Branching Strategy:
 
-development: The main working branch. All features merge here first.
+- main: Production-ready code only (Clean Delivery). Do NOT push here directly.
 
-Feature Branches: Create a new branch for every task.
+- development: The main working branch. All features merge here first.
 
-Naming convention: feature/task-name (e.g., feature/login-page, design/doctor-dashboard).
+- Feature Branches: Create a new branch for every task.
+
+- Naming convention: feature/task-name (e.g., feature/login-page, design/doctor-dashboard).
 
 2. How to Contribute
-Pull Latest Changes:
+Step 1 : Pull Latest Changes:
 
 Bash
 git checkout development
 git pull origin development
-Create Your Branch:
+
+Step 2 : Create Your Branch:
 
 Bash
 git checkout -b feature/your-task-name
-Coding Standards:
 
-Use the Navbar and Footer code located in static-design/auth/.
+Step 3 : Coding Standards:
 
-Use Bootstrap 5 classes for layout and spacing.
+- Use the Navbar and Footer code located in static-design/auth/.
 
-Ensure all images are placed in static-design/assets/images/.
+- Use Bootstrap 5 classes for layout and spacing.
 
-Push & Pull Request:
+- Ensure all images are placed in static-design/assets/images/.
+
+Step 4 : Push & Pull Request:
 
 Bash
 git push origin feature/your-task-name
-Go to GitHub and open a Pull Request (PR) targeting the development branch.
+
+- Go to GitHub and open a Pull Request (PR) targeting the development branch.
 
 👨‍💻 Development Team
-Team Leader: Anwar Mohamed
 
-Team Members:
+- Team Leader:
 
-[ Eng. Mohamed Aziz ]
+- Eng. Anwr Mohamed
 
-[ Eng. ANWR MOHAMED ]
+- Team Members:
 
-[👤Eng. Abdelrhman Khalifa ]
+- Eng. Mohamed Aziz
 
-[👤Eng. Alaa Mohamed ]
+- Eng. Abdelrhman Khalifa
 
-[👤Eng. Nourhan Abdelrahman ]
+- Eng. Alaa Mohamed
+
+- Eng. Nourhan Abdelrahman
 
 © 2026 MediBook Project | DEPI Graduation Project
 
