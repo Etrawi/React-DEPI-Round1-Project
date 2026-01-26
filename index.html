@@ -1,34 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Font Awesome CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Google Font: Inter -->
-        <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <title>MediBook</title>
+    <title> MediBook </title>
 
+    <link rel="stylesheet" href="https://bootswatch.com/5/pulse/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* تنسيقات بسيطة لتحسين الشكل */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            /* يجعل المحتوى يأخذ المساحة المتبقية لدفع الفوتر للأسفل */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .footer {
+            background-color: #171a1d;
+            /* لون داكن للفوتر */
+            color: white;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fa-solid fa-heart-pulse me-2"></i> MediBook
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient/patient-search.html">بحث عن طبيب</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">حساب المريض</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="patient/login.html">تسجيل دخول</a>
+                            <a class="dropdown-item" href="patient/signup.html">إنشاء حساب جديد</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-secondary text-white ms-2 px-3" href="doctor/doctor-login.html">
+                            <i class="fa-solid fa-user-doctor"></i> دخول الأطباء
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="display-4 fw-bold text-primary mb-3">رعايتك الصحية، أسهل وأسرع</h1>
+                <p class="lead text-muted mb-4">احجز كشفك الطبي مع نخبة من أفضل الأطباء في جميع التخصصات.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="patient/patient-search.html" class="btn btn-primary btn-lg px-4">
+                        <i class="fa-solid fa-magnifying-glass me-2"></i> ابحث عن طبيب
+                    </a>
+                    <a href="patient/signup.html" class="btn btn-outline-primary btn-lg px-4">
+                        سجل كمريض
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container text-center">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm p-3">
+                            <div class="card-body">
+                                <i class="fa-solid fa-calendar-check fa-3x text-primary mb-3"></i>
+                                <h4 class="card-title">حجز</h4>
+                                <p class="card-text text-muted">اختر الميعاد المناسب لك واحجز كشفك في ثوانٍ.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm p-3">
+                            <div class="card-body">
+                                <i class="fa-solid fa-star fa-3x text-primary mb-3"></i>
+                                <h4 class="card-title">تقييمات حقيقية</h4>
+                                <p class="card-text text-muted"> تقييمات المرضى.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm p-3">
+                            <div class="card-body">
+                                <i class="fa-solid fa-house-medical fa-3x text-primary mb-3"></i>
+                                <h4 class="card-title">كل التخصصات</h4>
+                                <p class="card-text text-muted">مختلف التخصصات الطبية.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 class="text-uppercase mb-3">MediBook</h5>
+                    <p class="small text-muted mb-0">جميع الحقوق محفوظة &copy; 2026</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
